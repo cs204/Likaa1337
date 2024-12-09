@@ -1,16 +1,17 @@
 def main():
-    greetting = input("Приветствие: ")
-    value(greetting)
+    greeting = input ("Приветствие: ")
+    res = value(greeting)
+    print(f"${res}")
 
-def value(greeting):
-    greetting = greeting.lower()
-    if greetting.startswith ("здравствуйте"):
-        print ("$0")
-    elif greetting.startswith ("з"):
-        print ("$20")
+def value(greeting) :
+    greeting = greeting.lower()
+    if greeting.startswith("здравствуйте"):
+        return 0
+    elif greeting.startswith("з"):
+        return 20
     else:
-        print ("$100")
+        return 100
 
 if __name__ == "__main__":
-   main()
+    main()
 
